@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
-
-
-
-
-    <script src="script.js"></script>
+    <h1>TicTacToe</h1>
+    <h3>Swaps Characters Every Turn! Play With A Friend!</h3>
+    <div class="players" id="players">
+        <form class="players-data">
+            Player One:<input id="player-one" type="text" placeholder="name">
+            Player Two:<input id="player-two" type="text" placeholder="name">
+           <button id="submit-players">Play!</button>
+        </form>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="winning-message" id="winning-message">
+        <div id="winner-text"></div>
+        <button id="restartButton">Restart</button>
+    </div>
 </body>
 </html>
